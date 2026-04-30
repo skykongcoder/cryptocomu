@@ -1,0 +1,6 @@
+{
+    "name": "Authority Connector",
+    "description": "게시글 본문의 핵심 키워드에 위키백과 링크를 자동 삽입하여 콘텐츠 공신력과 SEO 지수를 높입니다.",
+    "version": "1.0",
+    "author": "NuriBoard"
+}

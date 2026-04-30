@@ -1,0 +1,6 @@
+{
+    "name": "이미지 ALT 자동 삽입",
+    "description": "게시글 이미지에 alt 태그가 비어있으면 글 제목으로 자동 채워줍니다. (SEO 최적화)",
+    "version": "1.0",
+    "author": "NuriBoard"
+}

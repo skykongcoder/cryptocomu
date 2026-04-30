@@ -1,0 +1,6 @@
+{
+    "name": "AI 자동글 작성기",
+    "description": "키워드 목록을 등록하면 설정한 간격마다 ChatGPT가 SEO 최적화 글을 자동으로 작성합니다. 커스텀 프롬프트, 필수 포함 문구, Unsplash 이미지 자동 추가를 지원합니다.",
+    "version": "2.0",
+    "author": "NuriBoard"
+}

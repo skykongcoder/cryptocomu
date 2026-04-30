@@ -1,0 +1,11 @@
+{
+    "api_key": "",
+    "model": "openai/gpt-4o-mini",
+    "keywords": "",
+    "posts_per_board": 8,
+    "comments_per_post": 6,
+    "virtual_members": 30,
+    "reply_ratio": 40,
+    "auto_create_boards": "1",
+    "auto_create_menus": "1"
+}

@@ -1,0 +1,84 @@
+/* 헤더 시세 티커 */
+.cm-ticker-bar {
+    display:flex !important;
+    flex-direction:row !important;
+    flex-wrap:nowrap !important;
+    align-items:center;
+    background:linear-gradient(180deg, #0f172a, #1e293b);
+    color:#e2e8f0;
+    height:36px;
+    min-height:36px;
+    max-height:36px;
+    overflow:hidden !important;
+    font-size:13px;
+    border-bottom:1px solid #1e293b;
+    width:100%;
+}
+.cm-ticker-label {
+    flex-shrink:0;
+    padding:0 14px;
+    height:36px;
+    display:flex;
+    align-items:center;
+    background:#dc2626;
+    color:#fff !important;
+    font-weight:700;
+    text-decoration:none !important;
+    font-size:12px;
+    letter-spacing:0.04em;
+    /* 트랙이 transform 으로 음수 X 까지 밀려와 라벨 위에 겹치는 현상 방지 */
+    position:relative;
+    z-index:2;
+    box-shadow:2px 0 8px rgba(0,0,0,0.4);
+}
+.cm-ticker-label:hover { background:#b91c1c; color:#fff; text-decoration:none; }
+.cm-ticker-track {
+    /* 트랙이 viewport 폭에 stretch되지 않도록 콘텐츠 크기 그대로 유지
+       → translateX(-50%) 가 정확히 1세트 만큼 이동해서 빈 공간 없이 무한 루프 */
+    flex:0 0 auto;
+    width:max-content;
+    display:flex !important;
+    flex-direction:row !important;
+    flex-wrap:nowrap !important;
+    align-items:center;
+    gap:0;
+    white-space:nowrap !important;
+    animation:cmTickerScroll 90s linear infinite;
+    will-change:transform;
+    position:relative;
+    z-index:1;
+}
+.cm-ticker-bar:hover .cm-ticker-track { animation-play-state:paused; }
+
+.cm-ticker-item {
+    flex:0 0 auto !important;
+    flex-shrink:0 !important;
+    padding:0 16px !important;
+    height:36px;
+    display:inline-flex !important;
+    align-items:center;
+    gap:6px;
+    white-space:nowrap !important;
+    color:#e2e8f0 !important;
+    text-decoration:none !important;
+    border-right:1px solid #1e293b;
+    transition:background .12s;
+}
+.cm-ticker-item:hover { background:#0f172a; color:#fff; text-decoration:none; }
+.cm-ticker-item b { font-weight:700; color:#fff; }
+.cm-ticker-item .cm-ticker-price { color:#cbd5e1; font-variant-numeric:tabular-nums; }
+.cm-ticker-item .cm-ticker-rate  { font-weight:700; font-variant-numeric:tabular-nums; }
+.cm-ticker-item.up   .cm-ticker-rate { color:#fb7185; }
+.cm-ticker-item.down .cm-ticker-rate { color:#60a5fa; }
+.cm-ticker-loading { padding:0 16px; color:#94a3b8; font-size:12px; }
+
+@keyframes cmTickerScroll {
+    0%   { transform:translateX(0); }
+    100% { transform:translateX(-50%); }
+}
+
+@media (max-width: 720px) {
+    .cm-ticker-bar { height:32px; font-size:12px; }
+    .cm-ticker-label { height:32px; padding:0 10px; font-size:11px; }
+    .cm-ticker-item { height:32px; padding:0 12px; }
+}

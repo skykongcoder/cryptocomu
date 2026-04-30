@@ -1,0 +1,9 @@
+{
+    "name": "site-analytics",
+    "title": "사이트 분석",
+    "description": "방문자 추적, 유입 경로, 검색 키워드, 실시간 접속자, 기기/브라우저 분석 등 종합 사이트 분석 플러그인",
+    "version": "1.0.0",
+    "author": "NuriBoard",
+    "requires": "1.0.0",
+    "has_settings": true
+}

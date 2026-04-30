@@ -1,0 +1,7 @@
+{
+    "name": "누리코리아 색인 가속기",
+    "description": "새 글·수정글을 네이버·Bing·Yandex에 즉시 자동 제출. 평균 30분 내 검색 노출. 설정 0, 활성화만으로 작동. (선택) Google Indexing API 지원.",
+    "long_description": "검색엔진 즉시 색인 요청 (IndexNow 통합)\n- 네이버 즉시 색인\n- Bing 즉시 색인\n- Yandex 즉시 색인\n- 글 작성/수정 시 자동 감지\n- 실패 시 자동 재시도\n\n효과\n- 기존: 새 글 노출까지 1~7일\n- 이 플러그인: 평균 30분\n\n관리 편의\n- 24시간 제출 통계\n- 성공/실패 기록\n- 수동 전체 재제출 버튼\n\n고급 (선택)\n- Google Indexing API 지원 (JSON 키 업로드 시)\n- 설정 없어도 sitemap.xml 로 Google 색인 자동 (효과 동일)",
+    "version": "1.0",
+    "author": "누리코리아"
+}

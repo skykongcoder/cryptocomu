@@ -1,0 +1,298 @@
+/* ==========================================================================
+ * 크립토 부가 기능 공통 스타일
+ * 다크 테마와 어우러지도록 설계 — 색상은 crypto.css의 변수를 재사용
+ * ========================================================================== */
+
+/* ===== 페이지 헤더 (모든 부가 페이지 공통) ===== */
+.cx-page { padding:20px 0 60px; }
+.cx-page-head {
+    display:flex; align-items:flex-end; justify-content:space-between; gap:14px;
+    margin-bottom:24px; flex-wrap:wrap;
+    padding-bottom:16px; border-bottom:1px solid var(--border);
+}
+.cx-page-head h1 { font-size:26px; margin:0; font-family:var(--font-display); font-weight:700; }
+.cx-page-head .cx-sub { font-size:13px; color:var(--text-light); margin-top:4px; }
+
+/* ===== 카드 ===== */
+.cx-card {
+    background: linear-gradient(180deg, #0d1320 0%, #080c16 100%);
+    border:1px solid var(--border); border-radius:14px;
+    padding:18px; margin-bottom:14px;
+    transition: all .15s;
+}
+.cx-card:hover { border-color: var(--border-strong); }
+.cx-card-title { font-size:15px; font-weight:700; margin:0 0 12px; color:var(--text); font-family:var(--font-display); }
+
+/* ===== 메인 페이지 상승/하락 위젯 ===== */
+.cx-movers { display:grid; grid-template-columns:1fr 1fr; gap:14px; margin:24px 0; }
+.cx-movers-col h3 { font-size:14px; font-weight:700; margin:0 0 10px; padding:0 4px; }
+.cx-mover-row {
+    display:grid; grid-template-columns:auto 1fr auto auto; gap:8px 12px; align-items:center;
+    padding:10px 14px; background:linear-gradient(180deg,#0d1320,#080c16);
+    border:1px solid var(--border); border-radius:10px; margin-bottom:6px;
+    text-decoration:none; color:var(--text); transition:all .12s;
+}
+.cx-mover-row:hover { border-color:var(--border-strong); transform:translateX(2px); }
+.cx-mover-rank { font-family:var(--font-mono); font-size:11px; color:var(--text-dim); width:18px; }
+.cx-mover-name { font-size:13px; font-weight:600; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.cx-mover-name b { color:var(--text-light); font-size:11px; margin-right:4px; }
+.cx-mover-price { font-family:var(--font-mono); font-size:12px; color:var(--text-light); }
+.cx-mover-rate { font-family:var(--font-mono); font-size:13px; font-weight:700; min-width:60px; text-align:right; }
+.cx-mover-rate.up { color:#fb7185; }
+.cx-mover-rate.down { color:#60a5fa; }
+@media (max-width:720px) { .cx-movers { grid-template-columns:1fr; } }
+
+/* ===== 포트폴리오 ===== */
+.cx-pf-summary { display:grid; grid-template-columns:repeat(4, 1fr); gap:12px; margin-bottom:20px; }
+.cx-pf-summary .cx-card { padding:16px; }
+.cx-pf-stat-l { font-size:11px; color:var(--text-light); letter-spacing:0.04em; text-transform:uppercase; margin-bottom:6px; }
+.cx-pf-stat-v { font-size:20px; font-weight:800; font-family:var(--font-mono); }
+.cx-pf-stat-v.up { color:#fb7185; }
+.cx-pf-stat-v.down { color:#60a5fa; }
+
+.cx-pf-form { display:grid; grid-template-columns:2fr 1fr 1fr auto; gap:8px; align-items:end; margin-bottom:14px; }
+.cx-pf-form input, .cx-pf-form select {
+    background: rgba(0,0,0,0.4); border:1px solid var(--border); border-radius:8px;
+    padding:10px 12px; color:var(--text); font-size:14px; font-family:var(--font-mono);
+}
+.cx-pf-form button {
+    background: var(--grad-holo); background-size:200% 100%;
+    color:#000; font-weight:700; padding:10px 20px;
+    border:none; border-radius:8px; cursor:pointer; font-size:14px;
+}
+.cx-pf-form button:hover { background-position:right; }
+
+.cx-pf-table { width:100%; border-collapse:collapse; }
+.cx-pf-table th, .cx-pf-table td {
+    padding:12px 10px; text-align:left; border-bottom:1px solid var(--border); font-size:13px;
+}
+.cx-pf-table th { font-size:11px; color:var(--text-light); text-transform:uppercase; letter-spacing:0.04em; }
+.cx-pf-table td { font-family:var(--font-mono); }
+.cx-pf-table .cx-pf-name { font-family:var(--font-display); font-weight:600; }
+.cx-pf-table .up { color:#fb7185; }
+.cx-pf-table .down { color:#60a5fa; }
+.cx-pf-del { background:rgba(220,38,38,0.2); border:1px solid rgba(220,38,38,0.4); color:#fca5a5;
+    border-radius:6px; padding:4px 10px; cursor:pointer; font-size:12px; }
+.cx-pf-empty { text-align:center; padding:40px 20px; color:var(--text-light); font-size:14px; }
+@media (max-width:720px) {
+    .cx-pf-summary { grid-template-columns:repeat(2, 1fr); }
+    .cx-pf-form { grid-template-columns:1fr 1fr; }
+    .cx-pf-form button { grid-column:1 / -1; }
+}
+
+/* ===== 뉴스 ===== */
+.cx-news-grid { display:grid; grid-template-columns:repeat(3, 1fr); gap:16px; }
+.cx-news-card {
+    background: linear-gradient(180deg, #0d1320 0%, #080c16 100%);
+    border:1px solid var(--border); border-radius:12px; overflow:hidden;
+    text-decoration:none; color:var(--text); transition:all .15s; display:flex; flex-direction:column;
+}
+.cx-news-card:hover { border-color:var(--border-strong); transform:translateY(-2px); }
+.cx-news-img { width:100%; height:160px; object-fit:cover; background:#0a0e1a; }
+.cx-news-body { padding:14px; flex:1; display:flex; flex-direction:column; gap:8px; }
+.cx-news-title { font-size:15px; font-weight:700; line-height:1.4; margin:0;
+    display:-webkit-box; -webkit-line-clamp:2; line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; }
+.cx-news-meta { display:flex; justify-content:space-between; font-size:11px; color:var(--text-light); margin-top:auto; }
+.cx-news-source { color:var(--primary); font-weight:600; }
+.cx-news-cats { font-size:10px; color:var(--text-dim); }
+@media (max-width:900px) { .cx-news-grid { grid-template-columns:1fr 1fr; } }
+@media (max-width:600px) { .cx-news-grid { grid-template-columns:1fr; } }
+
+/* ===== 이벤트 캘린더 ===== */
+.cx-event-list { display:grid; gap:12px; }
+.cx-event-row {
+    display:grid; grid-template-columns:80px 1fr auto; gap:14px; align-items:center;
+    padding:14px 16px; background:linear-gradient(180deg,#0d1320,#080c16);
+    border:1px solid var(--border); border-radius:12px; transition:all .12s;
+}
+.cx-event-row:hover { border-color:var(--border-strong); }
+.cx-event-date {
+    background:linear-gradient(135deg, var(--cyan), var(--primary));
+    color:#000; padding:10px 8px; border-radius:8px; text-align:center;
+    font-family:var(--font-mono); font-weight:800;
+}
+.cx-event-date b { display:block; font-size:18px; line-height:1; }
+.cx-event-date small { font-size:10px; opacity:0.7; }
+.cx-event-title { font-size:15px; font-weight:700; margin:0 0 4px; }
+.cx-event-desc { font-size:13px; color:var(--text-light); }
+.cx-event-tag {
+    background:rgba(255,184,0,0.15); color:var(--accent);
+    border:1px solid rgba(255,184,0,0.3); border-radius:20px;
+    padding:4px 12px; font-size:11px; font-weight:600;
+}
+
+/* ===== 사전 ===== */
+.cx-glossary-search {
+    width:100%; background:rgba(0,0,0,0.4); border:1px solid var(--border-strong);
+    border-radius:10px; padding:14px 18px; color:var(--text); font-size:15px;
+    margin-bottom:20px;
+}
+.cx-glossary-cats { display:flex; gap:8px; flex-wrap:wrap; margin-bottom:24px; }
+.cx-glossary-cat {
+    padding:8px 16px; border:1px solid var(--border); border-radius:20px;
+    background:transparent; color:var(--text-light); cursor:pointer; font-size:13px;
+    transition:all .12s;
+}
+.cx-glossary-cat.active, .cx-glossary-cat:hover {
+    background:var(--grad-holo); background-size:200% 100%; color:#000; border-color:transparent;
+}
+.cx-glossary-grid { display:grid; grid-template-columns:repeat(2, 1fr); gap:14px; }
+.cx-term { padding:16px; background:linear-gradient(180deg,#0d1320,#080c16);
+    border:1px solid var(--border); border-radius:10px; transition:all .12s; }
+.cx-term:hover { border-color:var(--border-strong); }
+.cx-term-name { font-size:16px; font-weight:700; color:var(--primary); margin:0 0 8px;
+    font-family:var(--font-display); display:flex; align-items:center; gap:8px; }
+.cx-term-cat { font-size:10px; padding:3px 8px; border-radius:10px; background:rgba(0,255,212,0.1);
+    color:var(--text-light); font-weight:500; }
+.cx-term-def { font-size:13px; line-height:1.6; color:var(--text); margin:0; }
+@media (max-width:720px) { .cx-glossary-grid { grid-template-columns:1fr; } }
+
+/* ===== 🐋 LIVE 인디케이터 ===== */
+.cx-live-dot {
+    display:inline-block; width:8px; height:8px; border-radius:50%;
+    background:#ff3860; box-shadow:0 0 6px rgba(255,56,96,0.8);
+    animation: cxPulse 1.5s ease-in-out infinite;
+}
+@keyframes cxPulse {
+    0%, 100% { opacity:1; transform:scale(1); }
+    50%      { opacity:0.4; transform:scale(0.7); }
+}
+
+/* 새로 감지된 신호 카드 깜빡임 (한번만) */
+@keyframes cxWhaleNewBlink {
+    0%   { box-shadow: 0 0 0 0 rgba(255,184,0,0.6); border-color:var(--accent); }
+    50%  { box-shadow: 0 0 0 12px rgba(255,184,0,0); border-color:var(--accent); }
+    100% { box-shadow: 0 0 0 0 rgba(255,184,0,0); }
+}
+.cx-whale-new {
+    animation: cxWhaleNewBlink 2s ease-out 2;
+}
+.cx-whale-new::after {
+    content: 'NEW';
+    position:absolute; top:8px; right:14px; font-size:10px; font-weight:800;
+    background:var(--accent); color:#000; padding:2px 8px; border-radius:10px;
+    animation: cxPulse 1s ease-in-out 4;
+}
+
+/* ===== 🐋 고래 신호 카드 ===== */
+.cx-whale-list { display:grid; gap:14px; }
+.cx-whale-card {
+    display:grid;
+    grid-template-columns: 1fr 240px auto;
+    gap:18px;
+    align-items:center;
+    padding:18px 22px;
+    background:linear-gradient(180deg, #0d1320 0%, #080c16 100%);
+    border:1px solid var(--border);
+    border-radius:14px;
+    text-decoration:none;
+    color:var(--text);
+    position:relative;
+    overflow:hidden;
+    transition: all .2s;
+}
+.cx-whale-card:hover { border-color:var(--border-strong); transform:translateX(2px); box-shadow:0 8px 24px rgba(0,0,0,0.3); }
+
+/* 신호 타입별 좌측 컬러 바 (border-left) */
+.cx-whale-card::before {
+    content:''; position:absolute; left:0; top:0; bottom:0; width:4px;
+    background: var(--primary);
+}
+.cx-whale-ath::before   { background: linear-gradient(180deg, #fde047, #f59e0b); }
+.cx-whale-pump::before  { background: linear-gradient(180deg, #fb7185, #dc2626); }
+.cx-whale-dump::before  { background: linear-gradient(180deg, #60a5fa, #1d4ed8); }
+.cx-whale-buy::before   { background: linear-gradient(180deg, #fb7185, #fb923c); }
+.cx-whale-sell::before  { background: linear-gradient(180deg, #60a5fa, #818cf8); }
+.cx-whale-accum::before { background: linear-gradient(180deg, var(--primary), var(--secondary)); }
+
+/* 심각도 게이지 (카드 상단) */
+.cx-whale-severity {
+    position:absolute; top:0; left:4px; right:0; height:2px;
+    background: rgba(255,255,255,0.04);
+}
+.cx-whale-severity-bar {
+    height:100%;
+    background: linear-gradient(90deg, var(--primary), var(--secondary), var(--magenta));
+    transition: width .4s;
+}
+
+/* 메인 컨텐츠 (코인명 + 설명) */
+.cx-whale-main { min-width:0; }
+.cx-whale-coin { display:flex; align-items:baseline; gap:10px; margin-bottom:8px; flex-wrap:wrap; }
+.cx-whale-symbol {
+    font-family:var(--font-mono); font-weight:800; font-size:18px; color:var(--text);
+    background: rgba(0,255,212,0.08); padding:3px 10px; border-radius:6px;
+    border:1px solid var(--border);
+}
+.cx-whale-name { font-size:15px; font-weight:600; color:var(--text-light); }
+.cx-whale-desc {
+    font-size:14px; line-height:1.5; color:var(--text);
+    font-weight:500;
+}
+
+/* 통계 그리드 */
+.cx-whale-stats {
+    display:grid; grid-template-columns:repeat(2, 1fr); gap:10px 16px;
+    padding:10px 14px; background:rgba(0,0,0,0.3); border-radius:10px;
+}
+.cx-whale-stat-l { font-size:10px; color:var(--text-light); letter-spacing:0.04em; text-transform:uppercase; margin-bottom:2px; }
+.cx-whale-stat-v { font-size:14px; font-weight:700; font-family:var(--font-mono); color:var(--text); }
+.cx-whale-stat-v.up { color:#fb7185; } .cx-whale-stat-v.down { color:#60a5fa; }
+
+/* 신호 강도 점수 */
+.cx-whale-score {
+    display:flex; flex-direction:column; align-items:center; gap:2px;
+    padding:0 14px;
+    border-left:1px dashed var(--border);
+}
+.cx-whale-score strong {
+    font-size:28px; font-weight:900; line-height:1;
+    font-family:var(--font-mono);
+}
+
+/* 모바일 */
+@media (max-width:780px) {
+    .cx-whale-card { grid-template-columns:1fr; gap:12px; padding:16px; }
+    .cx-whale-stats { grid-template-columns:repeat(4, 1fr); }
+    .cx-whale-score { border-left:none; border-top:1px solid var(--border); padding:8px 0 0; flex-direction:row; }
+    .cx-whale-score strong { font-size:22px; }
+}
+@media (max-width:500px) {
+    .cx-whale-stats { grid-template-columns:repeat(2, 1fr); }
+    .cx-whale-symbol { font-size:15px; padding:2px 8px; }
+    .cx-whale-desc { font-size:13px; }
+}
+
+/* ===== 가격 예측 (재미용) ===== */
+.cx-predict-warning {
+    background:linear-gradient(135deg, rgba(255,184,0,0.15), rgba(255,45,146,0.15));
+    border:2px solid var(--accent); border-radius:14px; padding:16px 20px; margin-bottom:24px;
+    display:flex; gap:14px; align-items:center;
+}
+.cx-predict-warning .icon { font-size:36px; flex-shrink:0; }
+.cx-predict-warning b { color:var(--accent); }
+.cx-predict-controls { display:grid; grid-template-columns:1fr 1fr auto; gap:10px; margin-bottom:24px; }
+.cx-predict-controls select, .cx-predict-controls input {
+    background:rgba(0,0,0,0.4); border:1px solid var(--border); border-radius:10px;
+    padding:12px 14px; color:var(--text); font-size:14px;
+}
+.cx-predict-controls button {
+    background:var(--grad-holo); background-size:200% 100%; color:#000;
+    border:none; border-radius:10px; padding:12px 24px; font-weight:700; cursor:pointer; font-size:14px;
+}
+.cx-predict-result {
+    background:linear-gradient(180deg, #0d1320 0%, #080c16 100%);
+    border:1px solid var(--border-strong); border-radius:14px; padding:24px; margin-bottom:20px;
+    text-align:center;
+}
+.cx-predict-message { font-size:22px; font-weight:700; margin:0 0 16px; font-family:var(--font-display); }
+.cx-predict-numbers { display:grid; grid-template-columns:1fr 1fr 1fr; gap:14px; margin-bottom:20px; }
+.cx-predict-num { padding:14px; background:rgba(0,0,0,0.3); border-radius:10px; }
+.cx-predict-num-l { font-size:11px; color:var(--text-light); letter-spacing:0.04em; text-transform:uppercase; margin-bottom:6px; }
+.cx-predict-num-v { font-size:18px; font-weight:800; font-family:var(--font-mono); }
+.cx-predict-num-v.up { color:#fb7185; } .cx-predict-num-v.down { color:#60a5fa; }
+.cx-predict-chart { width:100%; height:240px; }
+@media (max-width:600px) {
+    .cx-predict-controls { grid-template-columns:1fr; }
+    .cx-predict-numbers { grid-template-columns:1fr; }
+}

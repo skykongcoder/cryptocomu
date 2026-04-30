@@ -1,0 +1,7 @@
+{
+    "name": "크립토 부가 기능",
+    "description": "포트폴리오 트래커, 코인 뉴스, 상승/하락 위젯, 이벤트 캘린더, 코인 사전, 재미 가격 예측 등 6가지 부가 기능 모음.",
+    "long_description": "크립토커뮤 사이트의 부가 콘텐츠 패키지:\n- 포트폴리오 트래커 (/portfolio): localStorage 기반 손익 계산\n- 코인 뉴스 (/news): CryptoCompare API 연동\n- 상승·하락 TOP 위젯: 메인 페이지 자동 갱신\n- 이벤트 캘린더 (/events): 큐레이션된 코인 이벤트\n- 코인 사전 (/glossary): 한국어 용어집\n- 재미 가격 예측 (/predict): 엔터테인먼트용 (참고만)",
+    "version": "1.0",
+    "author": "Crypto Community"
+}

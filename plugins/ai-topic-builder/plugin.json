@@ -1,0 +1,7 @@
+{
+    "name": "AI 토픽 빌더",
+    "description": "주제 하나만 입력하면 AI가 토픽 클러스터 구조로 사이트 전체 콘텐츠를 자동 설계하고 글을 연속 발행합니다. 구글 SEO의 최신 트렌드인 필러-클러스터 구조를 자동화합니다.",
+    "long_description": "🎯 주제 → 토픽 맵 자동 설계 (필러 1개 + 클러스터 N개)\n🤖 AI가 필러 글 먼저, 클러스터 글 순차 발행\n🔗 내부 링크 자동 연결 (필러↔클러스터)\n⏱️ 간격 발행으로 자연스러운 색인\n🌐 OpenAI GPT-4o-mini + Google Gemini 둘 다 지원\n📊 구글이 좋아하는 토픽 권위도(Topic Authority) 자동 구축",
+    "version": "1.0",
+    "author": "NuriBoard"
+}

@@ -1,0 +1,7 @@
+{
+    "name": "SEO 메타태그 자동 생성",
+    "description": "각 게시글의 메타 태그, Open Graph, JSON-LD을 자동으로 생성하여 검색 엔진 노출을 최적화합니다.",
+    "long_description": "📊 검색 엔진 최적화 (Google, Naver)\n🔗 Open Graph (카카오톡, 페이스북 공유)\n📝 JSON-LD 스키마 마크업\n🖼️ 자동 썸네일 감지\n⚙️ 상세 설정 페이지",
+    "version": "1.0",
+    "author": "NuriBoard"
+}

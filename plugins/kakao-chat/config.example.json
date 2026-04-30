@@ -1,0 +1,10 @@
+{
+    "kakao_chat_url": "https://pf.kakao.com/_example/chat",
+    "message": "카카오톡 상담",
+    "bubble_text": "",
+    "bubble_show": "0",
+    "size": "56",
+    "bottom": "24",
+    "right": "24",
+    "hide_admin": "1"
+}

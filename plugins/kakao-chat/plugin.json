@@ -1,0 +1,6 @@
+{
+    "name": "카카오톡 채팅 버튼",
+    "description": "사이트 우측 하단에 카카오톡 상담 채팅 버튼을 추가합니다. plugin.php에서 채널 URL을 수정하세요.",
+    "version": "1.0",
+    "author": "NuriBoard"
+}

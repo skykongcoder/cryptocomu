@@ -1,0 +1,6 @@
+{
+    "name": "이미지 최적화",
+    "description": "WebP 자동 변환, Lazy Loading, LCP 최적화로 모바일 PageSpeed 점수를 높이고 구글 Core Web Vitals를 개선합니다.",
+    "version": "1.0",
+    "author": "NuriBoard"
+}

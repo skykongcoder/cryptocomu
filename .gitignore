@@ -1,0 +1,50 @@
+# ===== 자격증명·민감 정보 =====
+config/config.php
+plugins/*/config.json
+*.pem
+*.key
+.env
+.env.*
+!.env.example
+
+# ===== 사용자 업로드 + 런타임 데이터 =====
+uploads/*
+!uploads/.gitkeep
+# data/ 안의 모든 파일·디렉토리 ignore (cache, runtime config, queue, uploads)
+# .gitkeep 만 git 에 보존
+data/*
+!data/.gitkeep
+
+# ===== 플러그인 런타임 캐시·상태 =====
+plugins/*/cache/
+plugins/*/state.json
+plugins/crypto-market/cache/
+plugins/crypto-extras/cache/
+plugins/crypto-influencers/cache/
+
+# ===== 배포 산출물 (자동 생성) =====
+deploy/*.sql
+deploy/*.zip
+deploy/*.tar.gz
+
+# ===== 개발 도구 =====
+.claude/
+.vscode/
+.idea/
+*.swp
+
+# ===== Claude Code 일회성 스크립트 =====
+scripts/seed_*.php
+scripts/import_*.php
+_ssl_test.php
+
+# ===== OS / 미디어 =====
+.DS_Store
+Thumbs.db
+*.log
+
+# ===== 미래 대비 (Composer / npm) =====
+vendor/
+composer.lock
+node_modules/
+package-lock.json

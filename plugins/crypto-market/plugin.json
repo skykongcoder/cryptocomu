@@ -1,0 +1,7 @@
+{
+    "name": "코인 마켓",
+    "description": "업비트 실시간 시세 페이지(/coin), 상세 차트, 헤더 시세 티커, 메인 위젯을 제공합니다.",
+    "long_description": "업비트(Upbit) 공개 API 기반 실시간 KRW 마켓 시세\n정렬: 변동률/거래대금/가격\n검색: 심볼/한글명\n상세 페이지: 24시간 고저, 누적 거래대금, 52주 고저\n헤더 자동 스크롤 티커(상위 코인)\n메인 위젯(crypto_market): 관리자 위젯에서 추가 가능\n캐시: 30초 (서버 부하 최소)\nKRW/BTC 마켓 전환 지원",
+    "version": "1.0",
+    "author": "Crypto Community"
+}

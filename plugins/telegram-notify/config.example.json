@@ -1,0 +1,7 @@
+{
+    "bot_token": "",
+    "chat_id": "",
+    "notify_post": "1",
+    "notify_comment": "1",
+    "notify_memo": "1"
+}

@@ -1,0 +1,12 @@
+{
+    "html_minify": true,
+    "lazy_loading": true,
+    "lazy_iframe": true,
+    "dns_prefetch": true,
+    "js_defer": true,
+    "gzip": true,
+    "browser_cache": true,
+    "remove_query_strings": false,
+    "preload_fonts": false,
+    "custom_prefetch": ""
+}

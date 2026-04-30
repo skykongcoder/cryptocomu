@@ -1,0 +1,6 @@
+{
+    "name": "AEO 부스터",
+    "description": "ChatGPT, Perplexity, Google AI Overview 같은 AI 검색엔진에 글이 채택되도록 최적화합니다. FAQ/HowTo 구조화 데이터 자동 삽입, llms.txt 자동 생성, AI 크롤러 제어.",
+    "version": "1.0",
+    "author": "NuriBoard"
+}

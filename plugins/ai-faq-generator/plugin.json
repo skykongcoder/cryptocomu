@@ -1,0 +1,6 @@
+{
+    "name": "AI FAQ 자동 생성기",
+    "description": "글 본문을 AI가 분석해 자주 묻는 질문(FAQ)을 자동 생성. FAQPage 스키마 자동 출력으로 구글 리치 리절트 노출.",
+    "version": "1.0",
+    "author": "워프스타"
+}

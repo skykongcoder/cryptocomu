@@ -1,0 +1,11 @@
+{
+    "kakao_enabled": "0",
+    "kakao_url": "",
+    "kakao_image": "",
+    "telegram_enabled": "0",
+    "telegram_url": "",
+    "telegram_image": "",
+    "position": "bottom-right",
+    "size": "medium",
+    "show_on_admin": "0"
+}

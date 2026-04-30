@@ -1,0 +1,11 @@
+{
+    "openai_api_key": "",
+    "openai_model": "openai/gpt-4o-mini",
+    "unsplash_api_key": "",
+    "image_enabled": "1",
+    "images_per_post": "2",
+    "interval_minutes": 30,
+    "promo_links": [],
+    "last_run": "",
+    "total_generated": 0
+}

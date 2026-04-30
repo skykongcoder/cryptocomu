@@ -1,0 +1,11 @@
+{
+    "enabled": true,
+    "google_enabled": false,
+    "google_json_key": "",
+    "indexnow_enabled": true,
+    "indexnow_key": "",
+    "auto_on_create": true,
+    "auto_on_update": true,
+    "daily_limit": 200,
+    "exclude_boards": ""
+}

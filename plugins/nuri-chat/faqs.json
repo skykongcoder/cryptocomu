@@ -1,0 +1,32 @@
+[
+    {
+        "id": "faq_howto",
+        "label": "이용 방법",
+        "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><circle cx=\"12\" cy=\"12\" r=\"10\"/><path d=\"M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3\"/><line x1=\"12\" y1=\"17\" x2=\"12.01\" y2=\"17\"/></svg>",
+        "answer": "환영합니다!\n\n1. 회원가입 (무료, 이메일만 있으면 OK)\n2. 원하는 게시판 선택\n3. 글쓰기 버튼으로 소통 시작\n\n더 궁금한 게 있으면 편하게 물어봐 주세요."
+    },
+    {
+        "id": "faq_signup",
+        "label": "회원가입 문의",
+        "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2\"/><circle cx=\"8.5\" cy=\"7\" r=\"4\"/><line x1=\"20\" y1=\"8\" x2=\"20\" y2=\"14\"/><line x1=\"23\" y1=\"11\" x2=\"17\" y2=\"11\"/></svg>",
+        "answer": "회원가입은 완전 무료예요!\n\n• 우측 상단 [회원가입] 버튼 클릭\n• 이메일 인증만 하면 바로 완료\n• 카카오/네이버 간편가입도 지원\n\n문제가 있으시면 아래 채팅으로 알려주세요."
+    },
+    {
+        "id": "faq_write",
+        "label": "글쓰기 방법",
+        "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7\"/><path d=\"M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z\"/></svg>",
+        "answer": "로그인 후 원하는 게시판에 들어가 [글쓰기] 버튼을 눌러주세요.\n\n• 이미지/동영상/링크 삽입 가능\n• 임시저장 기능 지원\n• 하루 최대 10개까지 작성 가능"
+    },
+    {
+        "id": "faq_ad",
+        "label": "광고/제휴 문의",
+        "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M3 11l18-5v12L3 14v-3z\"/><path d=\"M11.6 16.8a3 3 0 1 1-5.8-1.6\"/></svg>",
+        "answer": "광고/제휴 문의는 아래 채팅창에 회사명, 연락처, 제안 내용을 남겨주세요.\n\n담당자 확인 후 평일 기준 1~2일 내에 답변드리겠습니다."
+    },
+    {
+        "id": "faq_other",
+        "label": "기타 문의",
+        "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z\"/></svg>",
+        "answer": "아래 채팅창에 궁금하신 내용을 자유롭게 남겨주세요. 확인 후 순차적으로 안내드리겠습니다."
+    }
+]

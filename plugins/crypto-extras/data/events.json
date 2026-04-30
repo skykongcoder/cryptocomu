@@ -1,0 +1,89 @@
+{
+    "_comment": "큐레이션된 코인 이벤트. 새 이벤트는 이 파일에 추가하면 자동 표시. date는 YYYY-MM-DD",
+    "events": [
+        {
+            "date": "2026-05-15",
+            "title": "이더리움 Dencun 업그레이드 1주년 회고",
+            "description": "L2 가스비 절감 이후 1년간의 변화 - 커뮤니티 토론",
+            "tag": "ETH",
+            "type": "토론"
+        },
+        {
+            "date": "2026-05-22",
+            "title": "비트코인 ETF 1주년 데이터 분석",
+            "description": "스팟 ETF 승인 1년차 자금 유입 데이터 발표 예정",
+            "tag": "BTC",
+            "type": "리포트"
+        },
+        {
+            "date": "2026-06-10",
+            "title": "Korea Blockchain Week 2026",
+            "description": "서울 코엑스 · 글로벌 블록체인 컨퍼런스",
+            "tag": "행사",
+            "type": "컨퍼런스"
+        },
+        {
+            "date": "2026-06-25",
+            "title": "리플 SEC 소송 합의 만기일",
+            "description": "리플랩스 vs SEC 최종 판결 시한",
+            "tag": "XRP",
+            "type": "법규"
+        },
+        {
+            "date": "2026-07-04",
+            "title": "솔라나 Firedancer 메인넷 정식 가동",
+            "description": "Jump Crypto 개발 신규 클라이언트 활성화 예정",
+            "tag": "SOL",
+            "type": "업그레이드"
+        },
+        {
+            "date": "2026-08-15",
+            "title": "이더리움 Verkle Trees 활성화",
+            "description": "스테이트리스 클라이언트 도입 - 노드 운영 부담 대폭 감소",
+            "tag": "ETH",
+            "type": "업그레이드"
+        },
+        {
+            "date": "2026-09-01",
+            "title": "한국 디지털자산 기본법 시행",
+            "description": "거래소 규제·세금·소비자 보호 법안 본격 적용",
+            "tag": "규제",
+            "type": "법규"
+        },
+        {
+            "date": "2026-10-20",
+            "title": "비트코인 컨퍼런스 KOREA 2026",
+            "description": "부산 벡스코 · 글로벌 BTC 커뮤니티 모임",
+            "tag": "BTC",
+            "type": "컨퍼런스"
+        },
+        {
+            "date": "2026-11-12",
+            "title": "도지코인 OpenSats 그랜트 발표",
+            "description": "Doge 개발자 펀드 1차 수령자 선정",
+            "tag": "DOGE",
+            "type": "발표"
+        },
+        {
+            "date": "2026-12-01",
+            "title": "스테이블코인 규제 프레임워크 EU 발효",
+            "description": "MiCA 2단계 적용 - USDT/USDC 영향",
+            "tag": "규제",
+            "type": "법규"
+        },
+        {
+            "date": "2027-01-15",
+            "title": "이더리움 ETF 1주년",
+            "description": "ETH 스팟 ETF 1년 데이터 + 스테이킹 수익률 분석",
+            "tag": "ETH",
+            "type": "리포트"
+        },
+        {
+            "date": "2027-04-01",
+            "title": "비트코인 반감기 3년 차",
+            "description": "다음 반감기까지 1년 - 시장 사이클 분석",
+            "tag": "BTC",
+            "type": "마일스톤"
+        }
+    ]
+}

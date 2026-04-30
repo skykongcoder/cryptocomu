@@ -1,0 +1,10 @@
+{
+    "name": "auto-indexing",
+    "title": "자동 색인 요청",
+    "description": "글 발행 시 구글 Indexing API와 네이버/Bing IndexNow를 자동 호출하여 빠른 검색 노출을 유도합니다.",
+    "long_description": "게시글을 작성하거나 수정하면 자동으로 검색엔진에 색인을 요청합니다.\n\n주요 기능:\n- 구글 Indexing API 자동 호출 (서비스 계정 JSON 키)\n- 네이버/Bing IndexNow 프로토콜 지원\n- 글 발행/수정 시 자동 요청\n- 관리자 페이지에서 수동 색인 요청\n- 요청 이력 로그 확인\n- 일일 요청 한도 설정",
+    "version": "1.0.0",
+    "author": "NuriBoard",
+    "requires": "1.0.0",
+    "has_settings": true
+}

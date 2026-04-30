@@ -1,0 +1,10 @@
+{
+    "enabled": "1",
+    "title_suffix": "1",
+    "desc_length": "150",
+    "include_keywords": "1",
+    "og_enabled": "1",
+    "json_ld_enabled": "1",
+    "twitter_card": "1",
+    "canonical": "1"
+}

@@ -1,0 +1,7 @@
+{
+    "name": "누리코리아 SEO",
+    "description": "구글 서치콘솔·네이버 서치어드바이저 인증부터 GA4·GTM·페이스북 픽셀·카카오 픽셀까지 한 곳에서 관리하세요. 코드 수정 없이 복사·붙여넣기로 끝.",
+    "long_description": "검색엔진 등록 자동화\n- 구글 서치콘솔 사이트 인증 (HTML 태그 방식)\n- 네이버 서치어드바이저 사이트 인증\n\n방문자 분석 & 광고 추적\n- Google Analytics 4 (GA4)\n- Google Tag Manager (GTM)\n- 페이스북(Meta) 픽셀\n- 카카오 픽셀\n\n고급\n- 사용자 정의 head HTML 삽입\n- 설정 유효성 검사 + 실시간 미리보기\n- 모든 설정은 DB에 안전 저장",
+    "version": "1.1",
+    "author": "누리코리아"
+}

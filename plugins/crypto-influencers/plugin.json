@@ -1,0 +1,7 @@
+{
+    "name": "크립토 인플루언서 X",
+    "description": "크립토 인플루언서 트윗을 RSSHub + 신디케이션으로 페치하고 AI로 한국어 번역해서 자동 표시·게시판 등록.",
+    "long_description": "Vitalik Buterin, CZ, Saylor, Ki Young Ju 등 14명 크립토 인플루언서의 X(트위터) 활동을 자동 수집:\n- RSSHub 공개 인스턴스 + 신디케이션 폴백 체인\n- OpenRouter 무료 모델로 한국어 번역\n- /influencers 페이지에서 통합 피드\n- 관리자 트리거로 게시판 자동 등록\n- 트윗별 24h 번역 캐시 + 사용자별 15분 페치 캐시",
+    "version": "1.0",
+    "author": "Crypto Community"
+}

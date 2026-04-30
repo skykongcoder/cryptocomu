@@ -1,0 +1,21 @@
+{
+    "_comment": "크립토 인플루언서 큐레이션 목록. handle은 @ 제외한 X 사용자명. 영향력·관련성 기준으로 정렬.",
+    "_priorities": "1=상시 모니터링 / 2=주요 / 3=참고",
+    "influencers": [
+        { "handle": "VitalikButerin", "name": "Vitalik Buterin",     "role": "이더리움 창시자",        "tags": ["ETH","L2"],         "priority": 1 },
+        { "handle": "cz_binance",     "name": "Changpeng Zhao (CZ)", "role": "바이낸스 전 CEO",        "tags": ["BTC","거래소"],     "priority": 1 },
+        { "handle": "saylor",         "name": "Michael Saylor",      "role": "MicroStrategy 회장",     "tags": ["BTC"],              "priority": 1 },
+        { "handle": "elonmusk",       "name": "Elon Musk",           "role": "Tesla / DOGE 영향력",    "tags": ["DOGE","BTC"],       "priority": 1 },
+        { "handle": "haydenzadams",   "name": "Hayden Adams",        "role": "Uniswap 창업자",         "tags": ["DEX","DeFi"],       "priority": 2 },
+        { "handle": "AndreCronjeTech","name": "Andre Cronje",        "role": "DeFi 개발자",            "tags": ["DeFi","FTM"],       "priority": 2 },
+        { "handle": "aeyakovenko",    "name": "Anatoly Yakovenko",   "role": "솔라나 공동창업자",      "tags": ["SOL"],              "priority": 2 },
+        { "handle": "justinsuntron",  "name": "Justin Sun",          "role": "트론 창업자",            "tags": ["TRX"],              "priority": 3 },
+        { "handle": "brian_armstrong","name": "Brian Armstrong",     "role": "Coinbase CEO",           "tags": ["거래소"],           "priority": 2 },
+        { "handle": "cameron",        "name": "Cameron Winklevoss",  "role": "Gemini 공동창업자",      "tags": ["거래소","BTC"],     "priority": 3 },
+        { "handle": "CathieDWood",    "name": "Cathie Wood",         "role": "ARK Invest CEO",         "tags": ["기관","BTC"],       "priority": 2 },
+        { "handle": "CryptoHayes",    "name": "Arthur Hayes",        "role": "BitMEX 공동창업자",      "tags": ["거시경제"],         "priority": 2 },
+        { "handle": "RaoulGMI",       "name": "Raoul Pal",           "role": "Real Vision 창업자",     "tags": ["거시경제"],         "priority": 3 },
+        { "handle": "ki_young_ju",    "name": "Ki Young Ju (주기영)", "role": "CryptoQuant 창업자 🇰🇷", "tags": ["온체인","한국"],    "priority": 1 },
+        { "handle": "woonomic",       "name": "Willy Woo",           "role": "온체인 분석가",          "tags": ["온체인","BTC"],     "priority": 3 }
+    ]
+}
