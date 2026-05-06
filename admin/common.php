@@ -252,6 +252,9 @@ function adminHeader(string $currentPage = 'dashboard'): void
                 <a href="?page=settings" class="<?= $currentPage === 'settings' ? 'active' : '' ?>">
                     사이트 설정
                 </a>
+                <a href="?page=ai-monitor" class="<?= $currentPage === 'ai-monitor' ? 'active' : '' ?>">
+                    🤖 AI 모니터
+                </a>
                 <a href="?page=update" class="<?= $currentPage === 'update' ? 'active' : '' ?>" style="<?= $updHasNew ? 'color:#fff' : '' ?>">
                     누리보드 업데이트
                     <?php if ($updHasNew): ?>

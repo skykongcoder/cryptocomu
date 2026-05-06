@@ -70,6 +70,9 @@ switch ($page) {
     case 'update':
         require __DIR__ . '/update.php';
         break;
+    case 'ai-monitor':
+        require __DIR__ . '/ai-monitor.php';
+        break;
     case 'dashboard':
     default:
         require __DIR__ . '/dashboard.php';
