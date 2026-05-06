@@ -18,6 +18,7 @@ DB_NAME="cryptocomu"
 DB_USER="cryptouser"
 DB_PASS="$(openssl rand -hex 16)"
 SECRET_KEY="$(openssl rand -hex 32)"
+ADMIN_PASS="$(openssl rand -base64 12 | tr -d '+/=' | head -c 16)"
 SERVER_IP="$(curl -sS -m 5 ifconfig.me 2>/dev/null || curl -sS -m 5 icanhazip.com)"
 
 GREEN='\033[0;32m'; YELLOW='\033[1;33m'; RED='\033[0;31m'; NC='\033[0m'
@@ -92,11 +93,22 @@ else
     git clone "$REPO_URL" "$SITE_DIR"
 fi
 
-# ---------- [6] DB import ----------
-log "[6/9] DB import"
+# ---------- [6] DB import + admin 비밀번호 생성 ----------
+log "[6/9] DB import + admin 계정 생성"
 if [[ -f "$SITE_DIR/deploy/cryptocomu_db.sql" ]]; then
     mysql "$DB_NAME" < "$SITE_DIR/deploy/cryptocomu_db.sql"
     log "    DB import 완료"
+
+    # DB dump 의 password 가 비어있음 (보안) — 새 bcrypt 해시 생성해서 UPDATE
+    # PHP 8.3 가 이미 설치돼 있으므로 bcrypt 생성에 사용
+    ADMIN_HASH=$(php -r "echo password_hash('$ADMIN_PASS', PASSWORD_BCRYPT);")
+    mysql "$DB_NAME" -e "UPDATE nb_members SET password = '$ADMIN_HASH' WHERE user_id = 'admin' LIMIT 1;"
+
+    # 봇 계정들도 랜덤한 강한 비번으로 (로그인 못 하게 — 실수 방지)
+    BOT_HASH=$(php -r "echo password_hash(bin2hex(random_bytes(32)), PASSWORD_BCRYPT);")
+    mysql "$DB_NAME" -e "UPDATE nb_members SET password = '$BOT_HASH' WHERE user_id LIKE 'ai\\_%' OR user_id LIKE 'aic\\_%' OR user_id LIKE 'asb\\_%';"
+
+    log "    admin 비밀번호 자동 생성 + 봇 계정 잠금"
 else
     warn "    deploy/cryptocomu_db.sql 없음 — install.php 로 신규 설치 필요"
 fi
@@ -186,6 +198,11 @@ echo "  ✅ 설치 완료"
 echo "========================================"
 echo ""
 echo "사이트: http://$SERVER_IP"
+echo ""
+echo "🔑 관리자 로그인 (이 정보를 안전하게 저장하세요!):"
+echo "  URL:  http://$SERVER_IP/admin"
+echo "  ID:   admin"
+echo "  PASS: $ADMIN_PASS"
 echo ""
 echo "DB 정보 (config/config.php 에 저장됨):"
 echo "  DB: $DB_NAME"
