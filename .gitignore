@@ -22,8 +22,8 @@ plugins/crypto-market/cache/
 plugins/crypto-extras/cache/
 plugins/crypto-influencers/cache/
 
-# ===== 배포 산출물 (자동 생성) =====
-deploy/*.sql
+# ===== 배포 산출물 =====
+# deploy/cryptocomu_db.sql 은 의도적으로 git 에 포함 (sensitive 데이터 없음)
 deploy/*.zip
 deploy/*.tar.gz
 
