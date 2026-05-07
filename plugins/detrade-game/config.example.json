@@ -1,0 +1,17 @@
+{
+    "enabled": "0",
+    "api_key": "",
+    "private_key_pem": "",
+    "detrade_public_key_pem": "",
+    "baseurl": "https://test.detrade.com",
+    "ip_whitelist": "",
+    "currency": "PT",
+    "exchange_rate": "1",
+    "min_amount": "1000",
+    "max_amount": "1000000",
+    "daily_bonus": "10000",
+    "starting_balance": "30000",
+    "label_text": "🎮 코인 트레이딩 게임 (재미용)",
+    "label_subtext": "사이트 포인트로 즐기는 가격 예측 미니게임 — 환금 불가",
+    "hero_enabled": "1"
+}

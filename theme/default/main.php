@@ -184,6 +184,13 @@ if (function_exists('cm_tickers') && function_exists('cm_candles_days')):
     </div>
 </section>
 
+<!-- 플러그인 훅: home.hero.extra (예: Detrade 게임 배너) -->
+<?php
+$_homeHeroExtra = class_exists('Plugin') ? Plugin::applyFilter('home.hero.extra', '') : '';
+if ($_homeHeroExtra): ?>
+<section class="container" style="margin-bottom:18px"><?= $_homeHeroExtra ?></section>
+<?php endif; ?>
+
 <!-- 상승/하락 TOP 5 위젯 -->
 <section class="container" style="margin-bottom:18px">
     <div class="cx-movers">

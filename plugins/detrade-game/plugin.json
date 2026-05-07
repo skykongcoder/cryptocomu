@@ -1,0 +1,8 @@
+{
+    "name": "Detrade 코인 게임 (재미용)",
+    "description": "Detrade 트레이딩 게임을 가상 포인트로 즐기는 재미용 미니게임. 환금 불가 - 합법.",
+    "long_description": "Detrade 의 코인 가격 예측 게임을 우리 사이트에 임베드합니다.\n- 사이트 자체 포인트로만 베팅 (KRW/USDT 아님)\n- 환금/출금 불가능 — 100% 재미용\n- 일일 보너스 + 글쓰기 보상으로 포인트 획득\n- /game 페이지 + /wallet 지갑 + 메인 히어로 배너\n\n관리자 설정에서 Detrade apiKey/privateKey/공개키/baseurl/IP 화이트리스트 입력 후 활성화.",
+    "version": "1.0",
+    "author": "Crypto Community",
+    "requires": ["openssl", "curl"]
+}
