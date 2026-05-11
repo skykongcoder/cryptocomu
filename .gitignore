@@ -6,6 +6,11 @@ plugins/*/config.json
 .env
 .env.*
 !.env.example
+CREDENTIALS.md
+SECRETS.md
+credentials.txt
+secrets.txt
+_filter_replacements.txt
 
 # ===== 사용자 업로드 + 런타임 데이터 =====
 uploads/*
